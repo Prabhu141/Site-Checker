@@ -1,0 +1,6 @@
+Urls,Status_code,Expiry_date
+https://desss-portfolio.com/,NOT OK: HTTP response code 403,Domain name: desss-portfolio.com Expiry Date: 2023-01-22 Expiry Day: 47
+https://www.desss.com/,OK,Domain name: desss.com Expiry Date: 2023-02-12 Expiry Day: 68
+http://zunamelt.com/,OK,Domain name: zunamelt.com Expiry Date: 2023-02-26 Expiry Day: 82
+https://zunamelt.com/,"NOT OK: HTTPSConnectionPool(host='zunamelt.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""hostname 'zunamelt.com' doesn't match '5d0f99d.online-server.cloud'"")))",Domain name: zunamelt.com Expiry Date: 2023-02-26 Expiry Day: 82
+https://trophydeals.com/,OK,Domain name: trophydeals.com Expiry Date: 2023-07-27 Expiry Day: 234
