@@ -45,7 +45,7 @@
       </thead>
       <tbody>
       <!-- jinja2 Technique -->
-      {% if d %}  
+    
       {% for i in d %}
         <tr>
           <td>{{i.6}}</td>
@@ -55,7 +55,34 @@
           <td>{{i.Profit}}</td> -->
         </tr>
       {% endfor %}
-      {% endif %}
+      
+      </tbody>
+    </table>
+  </div>
+  <p></p>
+  <div class="container">
+    <h2 class="text-center"><u>Status Codes </u></h2><br>            
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <!-- <th>URL</th> -->
+          <th>SSL </th>
+          <th>Status code</th>
+        </tr>
+      </thead>
+      <tbody>
+      <!-- jinja2 Technique -->
+ 
+      {% for a in dssl %}
+        <tr>
+          <!-- <td>{{a.Urls}}</td> -->
+          <td>{{a.Status_code}}</td>
+          <td>{{a.SSL}}</td>
+          <!-- <td>{{i.State}}</td>
+          <td>{{i.Profit}}</td> -->
+        </tr>
+      {% endfor %}
+
       </tbody>
     </table>
   </div>
