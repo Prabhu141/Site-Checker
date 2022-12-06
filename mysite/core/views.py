@@ -107,7 +107,7 @@ def csvs(request):
         
     dframe = pd.DataFrame({'Urls': fsa[1:],
                    'Status_code': easy,
-                   # 'SSL': ssl,
+                   'SSL': ssl,
                    'Expiry_date': espirydate,})
     dframe.to_csv("./media/data/data1.csv", index=None)
     expiredf =pd.read_csv('./media/data/data1.csv')
@@ -123,7 +123,15 @@ def csvs(request):
     json_records = dfjson.reset_index().to_json(orient ='records')
     data = []
     data = json.loads(json_records)
-    return render(request, 'csv.html', { 'documents': documents, 'd': data })
+    #status
+    filepath = "./media/data/data1.csv"
+    dfjson = pd.read_csv(filepath , index_col=None, header=0)
+    #geeks = df.to_html()
+    json_ssl = dfjson.reset_index().to_json(orient ='records')
+    datassl = []
+    datassl = json.loads(json_ssl)
+    print(datassl)
+    return render(request, 'csv.html', { 'documents': documents, 'd': data, 'dssl': datassl })
     # return HttpResponse("Hello, world!"+rank)
 
 def csv_upload(request):
