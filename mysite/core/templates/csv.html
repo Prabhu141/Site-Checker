@@ -90,8 +90,14 @@
   <ul>
     {% for obj in documents %}
       <li>
+       
         <a href="{{ obj.document.url }}">{{ obj.document.name }}</a>
         <small>(Uploaded at: {{ obj.uploaded_at }})</small>
+        <form method="POST" action="{% url 'delete_document' obj.id %}">
+          {% csrf_token %}
+          <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+        </form> 
+        <!-- <a href="" class="btn btn-danger btn-sm">Delete</a> -->
       </li>
     {% endfor %}
   </ul> 
