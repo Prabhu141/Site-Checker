@@ -150,6 +150,15 @@ def csv_upload(request):
         'form': form
     })
 
+def delete_document(request,id):
+    if request.method == 'POST':
+        document = Document.objects.get(id=id)
+# if `save`=True, changes are saved to the db else only the file is deleted
+        #document.delete(id=id)
+        document.delete()
+        return redirect('csvs')
+
+
 def sitemap(request):
     sitemapdocuments = Sitemap.objects.all()
     rank = Document.objects.latest('id')
@@ -227,12 +236,3 @@ def csv_list(request):
          'documents': document
     })
 
-# def Table(request):
-#     df = pd.read_csv("./media/documents/data.csv")
-#     # parsing the DataFrame in json format.
-#     json_records = df.reset_index().to_json(orient ='records')
-#     data = []
-#     data = json.loads(json_records)
-#     context = {'d': data}
-  
-#     return render(request, 'table.html', context)
