@@ -1,0 +1,6 @@
+Urls,Status_code,SSL,Expiry_date,Robots_txt
+https://desss-portfolio.com/,NOT OK: HTTP response code 403,https://desss-portfolio.com/ has a valid SSL certificate!,Domain name: desss-portfolio.com Expiry Date: 2023-01-22 Expiry Day: 36,NOT OK: HTTP response code 404
+https://www.desss.com/,OK,https://www.desss.com/ has a valid SSL certificate!,Domain name: desss.com Expiry Date: 2023-02-12 Expiry Day: 57,OK
+http://zunamelt.com/,OK,http://zunamelt.com/ has a valid SSL certificate!,Domain name: zunamelt.com Expiry Date: 2023-02-12 Expiry Day: 57,NOT OK: HTTP response code 404
+https://trophydeals.com/,OK,https://trophydeals.com/ has a valid SSL certificate!,Domain name: trophydeals.com Expiry Date: 2023-07-27 Expiry Day: 223,OK
+https://trophydeals.com/,OK,https://trophydeals.com/ has a valid SSL certificate!,Domain name: trophydeals.com Expiry Date: 2023-07-27 Expiry Day: 223,OK
